@@ -1,0 +1,62 @@
+package Lesson2;
+
+public class Homework22 {
+    public static void main(String[] args) {
+
+        int n = 365;
+        int e = n / 10;
+        int d = n / 10 % 10;
+        int s = n / 100;
+        System.out.println(e);
+        System.out.println(d);
+        System.out.println(s);
+
+    }
+}
+_________________________________________________________
+.../IdeaProjects/Lesson2/target/classes Lesson2.Homework22
+36
+6
+3
+
+Process finished with exit code 0
+
+___________________________________________________________
+
+
+package Lesson2;
+
+public class Homework2 {
+    public static void main(String[] args) {
+
+        char j = 'G';
+        int a = 89;
+        byte b = 4;
+        short c = 56;
+        float d = 4.7333436f;
+        double e = 4.355453532;
+        long f = 12121;
+
+        System.out.println(j);
+        System.out.println(a);
+        System.out.println(b);
+        System.out.println(c);
+        System.out.println(d);
+        System.out.println(e);
+        System.out.println(f);
+
+    }
+}
+_________________________________________________________
+
+.../IdeaProjects/Lesson2/target/classes Lesson2.Homework2
+G
+89
+4
+56
+4.7333436
+4.355453532
+12121
+
+Process finished with exit code 0
+__________________________________________________________
