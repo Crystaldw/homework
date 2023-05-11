@@ -1,0 +1,107 @@
+Описание задания.
+
+ 1. уровень сложности: 
+ 
+ 1. Введите 2 слова с клавиатуры (используя объект класса Scanner), состоящие из четного количества букв. Выведите в консоль слово, состоящее из первой половины первого слова и второй половины второго слова.
+ 
+ package lesson4.hw80523;
+
+import java.util.Scanner;
+
+public class Homework4 {
+
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Введите два слова состоящих из четного колличества букв!");
+        System.out.println("Введите первое слово:");
+        String slovo1 = scanner.nextLine();
+        System.out.println("Введите второе слово:");
+        String slovo2 = scanner.nextLine();
+        int polPervogo = slovo1.length()/2;
+        int polVtorogo = slovo2.length()/2;
+//        System.out.println("Первая половина первого слова: " + polPervogo);
+//        System.out.println("Вторая половина второго слова:" + polVtorogo);
+        String result = slovo1.substring(0, polPervogo) + slovo2.substring(polVtorogo);
+        System.out.println("Слово которое получилось:");
+        System.out.println(result.toUpperCase());
+
+    }
+}
+
+ 
+ 2. Напишите программу, которая выводит на экран результаты сложения, вычитания, умножения и деления двух чисел. Каждая из арифметических операций должна быть реализована как отдельный метод.
+ 
+ package lesson4.hw80523;
+
+import java.util.Scanner;
+
+public class Homework42 {
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Введите первое число: ");
+        double num1 = scanner.nextDouble();
+
+        System.out.println("Введите второе число: ");
+        double num2 = scanner.nextDouble();
+		
+        double plus = num1 + num2;
+        double minus = num1 - num2;
+        double umnozenie = num1 * num2;
+        double delenie = num1 / num2;
+		
+        System.out.println("Результаты вычислений:");
+        System.out.println("Сложение: " + plus);
+        System.out.println("Вычитание: " + minus);
+        System.out.println("Умножение: " + umnozenie);
+        System.out.println("Деление: " + delenie);
+
+    }
+}
+
+ 
+ 3. Напишите метод, который конвертирует указанную сумму в евро в сумму в долларах США.
+ 
+ package lesson4.hw80523;
+
+import java.util.Scanner;
+
+public class Homework43 {
+
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Обменник EUR/USD");
+
+        double kurs = 1.18;
+
+        System.out.println("Укажите сколько EUR вы хотите обменять на USD: ");
+
+        double euro = scanner.nextDouble();
+        double result = kurs * euro;
+        System.out.println("Вы получите: " + result + " USD");
+
+    }
+}
+ 
+ 4.Напишите программу, которая подсчитает, сколько дополнительных калорий будет, если вы купите пиццу диаметром 28 см вместо пиццы диаметром 24 см. Будем считать, что в каждом квадратном сантиметре пиццы содержится 40 калорий.
+ 
+ package lesson4.hw80523;
+
+public class Homework44 {
+
+    public static void main(String[] args) {
+
+        int cal = 40;
+        int diametrPizzza24 = 24;
+        int diametrPizza28 = 28;
+		
+        System.out.println("При покупке пицы 28см. Вы получите на " + ((diametrPizza28 * cal) - (diametrPizzza24 * cal)) + " калорий больше!");
+
+
+
+    }
+}
